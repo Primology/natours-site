@@ -11,6 +11,12 @@
   &__content {
     height: 100%;
     width: 100%;
+    -webkit-object-fit: cover;
+    -moz-object-fit: cover;
     object-fit: cover;
+  }
+
+  @include respond(tab-port) {
+    transform: skewX(0);
   }
 }

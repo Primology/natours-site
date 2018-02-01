@@ -10,6 +10,37 @@
   visibility: hidden;
   transition: all .5s;
 
+  //FIXME:
+  @include respond(phone) {
+    &__content {
+      width: 92% !important;
+    }
+
+    &__left {
+      display: none !important;
+    }
+
+    &__right {
+      padding: 2rem 2.5rem !important;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    .btn {
+      font-size: 1.4rem;
+      @include mx__center;
+      transform: translate(-50%, -20%)
+    }
+
+  }
+
   &__content {
     width: 75%;
     background-color: $color-white;
